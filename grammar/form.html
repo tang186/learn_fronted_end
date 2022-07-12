@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     form标签 有三个元素<br>
+     action 属性值 url地址 用于接收表单数据的服务器的url地址<br>
+     method get或者post 提交方法 <br>
+     name 名称  用于指定表单名称以区分范围 <br>
+     input 输入表单元素 单标签 必须有type
+    <br>
+    <form action="#" method="POST" name="name1">
+        <!-- text文本框，可以输入任何文字 -->
+        <!-- maxlength是最多输入字符 -->
+        用户名字：<input type="text"  value="请输入用户名" maxlength="6">
+        <br>
+        <!-- password密码框 -->
+        密码： <input type="password"> <br>
+        <!-- 单选和复选可以默认选中用checked就好 -->
+        性别 ： 男 <input type="radio" name="sex" value="男">  女 <input type="radio" name="sex" value="女"> <br>
+        爱好 ： one <input type="checkbox" name="hobby" value="one" checked="checked"> two <input type="checkbox" name="hobby" value="two"> <br>
+        <img src="image/formElement.png">  <br>
+        
+        <input type="file">  <!-- 上传文件 -->
+    </form>     
+
+</body>
+</html>
