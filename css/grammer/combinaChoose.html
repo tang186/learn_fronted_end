@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选出ol孩子li改成pink */
+        ol li {
+            /*空格隔开*/
+            color: pink;
+        }
+
+        ol li a {
+            color: pink;
+        }
+
+        .nav>a {
+            /*用>号只选亲儿子，（最近的元素）*/
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 后代选择器 -->
+    <ol>
+        <li>ol的孩子</li>
+        <li>ol的孩子</li>
+        <li>ol的孩子</li>
+        <li><a href="#">孩子的孩子</a></li>
+    </ol>
+    <ul>
+        <il>ul孩子</il>
+        <il>ul孩子</il>
+        <il>ul孩子</il>
+    </ul>
+
+    <!-- 子选择器 -->
+    <div class="nav">
+        <a href="#">儿子</a>
+        <p>
+            <a href="#">孙子</a>
+        </p>
+    </div>
+</body>
+
+</html>
