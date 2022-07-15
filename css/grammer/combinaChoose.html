@@ -21,6 +21,38 @@
             /*用>号只选亲儿子，（最近的元素）*/
             color: pink;
         }
+
+        div,
+        p,
+        .pig li {
+            color: pink;
+        }
+
+        /* 有一定顺序 link visited hover active */
+        a:link {
+            /* 没有访问过的链接 */
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:visited {
+            /* 访问过的链接 */
+            color: orange;
+        }
+
+        a:hover {
+            /* 鼠标碰到时候 */
+            color: skyblue;
+        }
+
+        a:active {
+            /* 鼠标点到未结束 */
+            color: green;
+        }
+
+        input:focus {
+            background-color: pink;
+        }
     </style>
 </head>
 
@@ -45,6 +77,19 @@
             <a href="#">孙子</a>
         </p>
     </div>
+    <!-- 并集选择器 -->
+    <div>one</div>
+    <p>two</p>
+    <span>three</span>
+    <ul class="pig">
+        <li>佩奇</li>
+        <li>mom</li>
+        <li>dad</li>
+    </ul>
+    <!-- 伪类选择器 -->
+    <a href="#">小猪佩奇</a>
+    <!-- focus伪类选择器 -->
+    <input type="text">
 </body>
 
 </html>

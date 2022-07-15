@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 三大特性 层叠 继承 优先 */
+        div {
+            font-size: 50px;
+            color: red;
+            font: 12px/1.5;
+            /*当前文字的1.5倍*/
+        }
+
+        div {
+            color: pink;
+        }
+
+        p {
+            color: pink !important;
+        }
+
+        /* a链接默认有一个样式 蓝色有下划线 a{color: bule;} */
+
+        ul li {
+            /* 权重叠加了所以权重更高 */
+            color: green;
+        }
+
+        li {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        冲突部分就近原则
+        <p>继承div标签的特性</p>
+    </div>
+    <p>滚滚长江东逝水</p>
+    选择器权重
+    <img src="image/6.png">
+    <ul>
+        <li>猪</li>
+        <li>牛</li>
+        <li>鸡</li>
+    </ul>
+</body>
+
+</html>
