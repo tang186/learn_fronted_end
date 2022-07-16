@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 边框会影响盒子实际大小 ，计算大小时要注意边框大小*/
+        div {
+            width: 300px;
+            height: 200px;
+            border-width: 5px;
+            /* border-style: solid; */
+            border-style: dashed;
+            /* border-style: dotted; */
+            border-color: pink;
+            /* 复合写法 没有顺序 通俗是width style color */
+            border-top: 5px solid green;
+            /* 可以单独设置四个边框 */
+            padding-left: 30px;
+            padding-right: 30px;
+            /* 可以四个方位的空间都可以设置 */
+            /* padding也会影响盒子大小 */
+            /* 盒子里面内容字数不一样多，可以不设置大小，而只设置padding */
+            /* 如果盒子本身没有指定width/height属性，则此时padding不会撑开盒子大小 */
+
+            /* 盒子与盒子之间距离 maigin 与padding使用方法基本一致*/
+        }
+
+        .one,
+        .two {
+            /* 块级元素盒子默认居中 可以
+            1.左右auto
+            2.必须有宽度 实现 */
+            /* 行内元素或者行内块元素要居中直需要父类 text-align: center; 就可以了 */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .one {
+            /* 外边距会合并，大的合并小的 */
+            margin-bottom: 100px;
+        }
+
+        .father {
+            /* 解决塌陷问题 */
+            /* 1.可以给父元素加一个边框 */
+            /* 2.可以给父元素定义上内边框 */
+            /* 3.可以给父元素添加 overflow：hidden */
+            width: 400px;
+            height: 400px;
+            color: pink;
+            margin-top: 50px;
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        盒子内容盒子内容盒子内容盒子内容盒子|||
+        padding描述方式
+    </div>
+    <img src="image/7.png">
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <!-- 网页一般会自带边距 -->
+    <!-- 行内元素一般只设置左右边距 -->
+</body>
+
+</html>
