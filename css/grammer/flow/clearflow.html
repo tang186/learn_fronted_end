@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浮动对父级有影响，要清除浮动的影响 */
+        /* 清除浮动后父元素会根据子元素的高度自动决定高度 */
+        /* 3.  
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        } */
+
+        /* 4.  */
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .box {
+            /* 2. */
+            /* 清除浮动和解决外塌陷 */
+            /* overflow: hidden; */
+            width: 700px;
+            background-color: skyblue;
+            border: 1px solid blue;
+        }
+
+        .one {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .two {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        /* 1. */
+        /* .clear {
+            clear: both;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="box clearfix">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <!-- <div class="clear">隔墙法</div> -->
+    </div>
+    <div>
+        四个方法清除副浮动
+        <img src="../image/9.png" alt="">
+    </div>
+</body>
+
+</html>

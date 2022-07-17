@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1200px;
+            height: 460px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .left {
+            float: left;
+            width: 230px;
+            height: 460px;
+            background-color: purple;
+        }
+
+        .right {
+            float: left;
+            height: 460px;
+            width: 970px;
+            background-color: skyblue;
+        }
+
+        .box1 {
+            width: 1226px;
+            height: 285px;
+            background-color: pink;
+            margin: 0 auto;
+            list-style: none;
+        }
+
+        .box1 li {
+            float: left;
+            width: 296px;
+            height: 285px;
+            background-color: purple;
+            margin-right: 14px
+        }
+
+        .box1 .four {
+            margin-right: 0;
+        }
+
+        .box2 {
+            width: 1226px;
+            height: 615px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .zuo {
+            float: left;
+            width: 234px;
+            height: 615px;
+            background-color: purple;
+        }
+
+        .you {
+            float: left;
+            width: 992px;
+            height: 615px;
+            background-color: skyblue;
+        }
+
+        .box2 .you>div {
+            float: left;
+            width: 234px;
+            height: 300px;
+            background-color: yellow;
+            margin-left: 14px;
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">zuo</div>
+        <div class="right">you</div>
+    </div>
+    <br>
+    <br>
+    <ul class="box1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="four">4</li>
+    </ul>
+
+    <br>
+    <br>
+    <div class="box2">
+        <div class="zuo">left</div>
+        <div class="you">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </div>
+</body>
+
+</html>
