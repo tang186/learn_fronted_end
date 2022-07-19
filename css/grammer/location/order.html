@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 绝对定位会压住盒子和内容 */
+            position: absolute;
+            /* 浮动的盒子不会压着盒子里面的内容 */
+            /* 浮动的初衷就是文字环绕的效果 */
+            /* float: left; */
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .one {
+            z-index: 1;
+            background-color: red;
+        }
+
+        .two {
+            background-color: pink;
+        }
+
+        .three {
+            background-color: yellow;
+        }
+
+        .juzhong {
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            width: 200px;
+            height: 300px;
+            background-color: yellow;
+            /* margin: auto; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- z-index z轴 -->
+    <div class="box one">one</div>
+    <div class="box two">two</div>
+    <div class="box three">three</div>
+
+    <div class="juzhong"></div>
+
+    <!-- 1.行内元素只要加了绝对或者固定定位都可以直接设置高度和宽度 -->
+    <!-- 2．块级元素添加绝对或者固定定位，如果不给宽度或者高度，默认大小是内容的大小. -->
+    <!-- 脱标的盒子不会触发外边距合并的问题 -->
+    <p>水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水水</p>
+</body>
+
+</html>

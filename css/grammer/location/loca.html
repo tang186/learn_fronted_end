@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .box1 {
+            position: relative;
+            /* top: 30px; */
+            /* left: 100px; */
+            width: 100px;
+            height: 20px;
+            background-color: pink;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 20px;
+            background-color: purple;
+        }
+
+        .son {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .father {
+            position: relative;
+            /*相对 绝对 固定都可以让son以father为准定位 ，静态不行*/
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        .zyg {
+            position: fixed;
+            right: 0px;
+            top: 0px;
+        }
+
+        .w {
+            width: 800px;
+            height: 800px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .fixed {
+            position: fixed;
+            left: 50%;
+            margin-left: 400px;
+            /* 不加top就不知道以哪一个为准的top所以不加top就不显示 */
+            /* top: 20px; */
+            width: 50px;
+            height: 150px;
+            background-color: yellow;
+        }
+
+        .nav {
+            /* 可以理解为碰到了某个边界就变成固定 */
+            position: sticky;
+            top: 0;
+            width: 800px;
+            height: 50px;
+            background-color: yellow;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="image/1.png" alt="">
+
+    <!-- 静态定位 即是标准流-->
+
+    <!-- 相对定位 -->
+    <!-- 以自己原来的位置为相对位置做偏移，原来的位置继续保留 即为不脱标-->
+    <div class="box1">123</div>
+    <div class="box2">456</div>
+
+    <!-- 绝对定位 -->
+    <!-- 绝对定位在移动位置的时候是相对于他的最近一级祖先元素来说的 -->
+    <!-- 如果没有父元素就以浏览器为准 -->
+    <!-- 父元素没有定位也是以浏览器为准 -->
+    <!-- 绝对定位是脱标的 -->
+    <!-- 子绝父相比较常用 -->
+    <!-- <div class="father"> -->
+    <div class="son"></div>
+    <!-- </div> -->
+
+    <!-- 固定定位，不管浏览器怎么动都在浏览器固定的位置 -->
+    <!-- 以浏览器的可视窗口为准 -->
+    <!-- 脱标 -->
+    <div class="zyg">
+        <!-- <img src="image/happy.jpg" alt=""> -->
+    </div>
+
+    <!-- 固定版心右侧 -->
+    <div class="fixed">
+        neitong
+    </div>
+    <div class="w">版心盒子 800像素</div>
+    <img src="image/half.png" alt="">
+
+    <!-- 粘性定位 可以理解为相对和固定的混合 -->
+    <!-- 以浏览器的可视窗口为准 -->
+    <!-- 占有原先的位置 -->
+    <!-- 必须添加一个top left right buttom 其中一个 -->
+    <div class="nav">我是导航栏</div>
+
+    <!-- 定位总结 -->
+    <img src="image/dingwei.png" alt="">
+</body>
+
+</html>

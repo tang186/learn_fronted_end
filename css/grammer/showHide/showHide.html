@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            visibility: hidden;
+            /* visibility保留位置 */
+            /* display: block; */
+            /* 不再显示并且不占位置 */
+            /* 隐藏不是删除 */
+        }
+
+        .two {
+            overflow: visible;
+            /* 默认是visible */
+            /* 还有 hidden scroll滚动条 auto需要的时候就滚动条 */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../image/dog.gif" alt="" class="one">
+    <img src="../image/eyes.jpg" alt="" class="two">
+</body>
+
+</html>
