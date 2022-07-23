@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?olguqz');
+    src:  url('../fonts/icomoon.eot?olguqz#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?olguqz') format('truetype'),
+      url('../fonts/icomoon.woff?olguqz') format('woff'),
+      url('../fonts/icomoon.svg?olguqz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+.fl {
+    float: left;
+}
+.fr{
+    float: right;
+}
+.main {
+    width: 980px;
+    height: 455px;
+    /* background-color: pink; */
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.main .focus {
+    width: 721px;
+    height: 455px;
+    float: left;
+    /* background-color: purple; */
+    /* background: url(../upload/ad.png); */
+} 
+.main .newflash {
+    width: 250px;
+    height: 455px;
+    float: right;
+    /* background-color: skyblue; */
+}
+.news {
+    height: 165px;
+    /* background-color: pink; */
+    border:1px solid #e4e4e4;
+}
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    /* background-color: purple; */
+    border:1px solid #e4e4e4;
+    border-top:0;
+}
+.bargin {
+    margin-top: 5px;
+}
+.new-hd{
+    height: 33px;
+    line-height: 33px;
+    border-bottom:1px dotted #e4e4e4;
+    font-size: 14px;
+    padding: 0 15px;
+}
+.new-hd .more::after{
+    padding-left: 5px;
+    content: '\e900';
+    font-family: 'icomoon';
+}
+.new-bd {
+    padding: 5px 15px 0;
+}
+.lifeservice ul{
+    width: 252px;
+}
+.new-bd ul li {
+    /* margin-top: 5px; */
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lifeservice ul li{
+    text-align: center;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lifeservice ul  li i {
+    margin-top: 12px;
+    margin-left: 20px;
+    display: block;
+    /* 行内块元素有缝隙的原因：元素被当成行内元素排版的时候，
+    元素之间的空白符（空格、回车换行等）都会被浏览器处理，
+    根据white-space的处理方式（默认是normal，合并多余空白），
+    原来HTML代码中的回车换行被转成一个空白符，所以元素之间就出现了空隙。
+    这些元素之间的间距会随着字体的大小而变化，当行内元素font-size:16px时，间距为8px. */
+    width: 24px;
+    height: 28px;
+    /* background-color: pink; */
+    background: url(../素材/image/icons.png) no-repeat -17px -15px;
+}
+.lifeservice ul  li p{
+    margin-top: 0;
+} 
+.recom {
+    margin-top: 12px;
+    height: 163px;
+    background-color: pink;
+}
+.recom_hd{
+    float: left;
+    height: 163px;
+    width: 204px;
+    background-color: #5c5251;
+    padding-top:30px;
+    text-align: center;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+.recom_bd ul li img {
+    width: 249px;
+    height: 163px;
+}
+.recom_bd ul li:nth-child(-n+3):after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+.jiadian .box_hd{
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.jiadian .box_hd h3{
+    color: #c81623;
+    float: left;
+    font-size: 18px;
+    font-weight: 400;;
+}
+.jiadian .box_hd .tab_list{
+    float: right;
+    line-height: 30px;
+}
+.tab_list ul li{
+    padding-right: 15px;
+    float: left;
+}
+.tab_list ul li a{
+    margin-right:15px;
+}
+.box_bd{
+    height: 361px; 
+    background-color: pink;
+}
+.tab_list_item>div{
+    float: left;
+    height: 361px;
+}
+.col_210{
+    width: 210px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.col_210 ul li{
+    float: left;
+    margin-right: 10px;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+}
+.col_210 ul {
+    padding-left: 12px;
+}
+.col_210 img {
+    margin-top: 20px;
+}
+.col_329{
+    width: 329px;
+}
+.col_221{
+    width: 221px;
+}
+.col_2219{
+    width: 219px;
+}
