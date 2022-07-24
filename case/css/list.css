@@ -1,0 +1,54 @@
+.nav {
+    overflow: hidden;
+}
+.sk {
+    position: absolute;
+    left :190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding-top: 3px;
+    padding-left: 14px;
+}
+.sk_list{
+    float: left;
+}
+.sk_con{
+    float: right;
+}
+.sk_list ul li{
+
+    margin:0 27px;
+    float: left;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+.sk_list ul li a{
+    color: #000;
+}
+.sk_con ul li{
+    width: 60px;
+    margin:0 16px;
+    float: left;
+    line-height: 49px;
+    text-align: center;
+    font-size: 14px;
+}
+.sk_bd{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sk_bd ul li {
+    float: left;
+    margin-right: 13px;
+    width: 290px;
+    height: 460px;
+    border:1px solid transparent;
+}
+.sk_bd ul li:nth-child(4n){
+    margin-right: 0;
+}
+.sk_bd ul li:hover{
+    border:1px solid red;
+}
